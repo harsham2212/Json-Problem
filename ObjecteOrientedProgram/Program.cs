@@ -6,23 +6,30 @@ namespace ObjectOrientedProgram
     {
         static void Main(string[] args)
         {
-            bool flag = true;
-            InventoryMain im = new InventoryMain();
-            while (flag)
-            {
-                Console.WriteLine("Enter option \n 1.Name \n 2.Weight \n 3.Price \n 4.Exit \n");
-                int choice = Convert.ToInt32(Console.ReadLine());
-                switch (choice)
+                bool flag = true;
+                while (flag)
                 {
-                    case 1:
-                        im.DisplayData(@"E:\BridgeLAbz\Git\ObjectOrientedPrograms\ObjecteOrientedProgram\File\Inventory.json");
-                        break;
-                    case 2:
-                        flag = false;
-                        break;
-
+                    Console.WriteLine("Welcome to Object Oriented Program");
+                    Console.WriteLine("Choose the Option : \n 1. JSON \n 2. Inventory Management \n 3. Exit");
+                    int option = Convert.ToInt32(Console.ReadLine());
+                    switch (option)
+                    {
+                        case 1:
+                            InventoryMain inv = new InventoryMain();
+                            inv.DisplayData(@"E:\BridgeLAbz\Git\Json-Problem\Json-Problem\ObjecteOrientedProgram\File\Inventory.json");
+                            break;
+                        case 2:
+                            InventoryMain invent = new InventoryMain();
+                            invent.ReadData(@"E:\BridgeLAbz\Git\Json-Problem\Json-Problem\ObjecteOrientedProgram\File\InventoryList.json");
+                            invent.DisplayData("Rice");
+                            invent.DisplayData("Wheat");
+                            invent.DisplayData("Pulses");
+                            break;
+                        case 3:
+                            flag = false;
+                            break;
+                    }
                 }
-            }
         }
     }
 }
