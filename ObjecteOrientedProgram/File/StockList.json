@@ -1,0 +1,21 @@
+
+  [
+    {
+      "StockName": "Trident",
+      "NoOfShares": 20,
+      "PricePerShare": 37,
+      "TransactionDetails": "19-11-2021"
+    },
+    {
+      "StockName": "Tata Power",
+      "NoOfShares": 10,
+      "PricePerShare": 509,
+      "TransactionDetails": "19-11-2021"
+    },
+    {
+      "StockName": "Tata Chemicals",
+      "NoOfShares": 30,
+      "PricePerShare": 789,
+      "TransactionDetails": "19-11-2021"
+    }
+  ]
